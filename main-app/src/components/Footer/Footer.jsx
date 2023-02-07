@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col} from "reactstrap";
 import logo from "../../assets/images/res-logo.png";
-import styles from './Footer.module.scss'
+import styles from './Footer.module.scss' //css module
 
 
 const Footer = () => {
@@ -14,8 +14,7 @@ const Footer = () => {
               <img src={logo} alt="logo" />
               <h5>SEPETİM</h5>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Nesciunt pariatur accusamus
+                Teknoloji Mağazası
               </p>
             </div>
               </Col>

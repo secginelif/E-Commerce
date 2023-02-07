@@ -55,7 +55,7 @@ const ProductCard = (props) => {
         </p>
         <div className="box">
           
-          <div className={styles["product-price"]}>${price}</div>
+          <div className={styles["product-price"]}>{price} TL</div>
         <div>
           
           <button className={styles["addTOCart-btn"]} onClick={addToCart}>

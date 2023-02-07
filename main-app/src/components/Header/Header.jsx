@@ -6,7 +6,7 @@ import { NavLink, Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { cartUiActions } from "../../store/shopping-cart/cartUiSlice";
 
-import styles from "./Header.module.scss";
+import styles from "./Header.module.scss"; //css module
 import './header.scss'
 const nav__links = [
   {
@@ -27,6 +27,7 @@ const Header = () => {
   const totalQuantity = useSelector((state) => state.cart.totalQuantity);
   const dispatch = useDispatch();
 
+  //mobile
   const toggleMenu = () => menuRef.current.classList.toggle("show-menu");
 
   const toggleCart = () => {
@@ -63,7 +64,7 @@ const Header = () => {
             <h5>SEPETİM</h5>
           </div>
 
-          {/* ======= menu ======= */}
+          {/* -------- menu -------- */}
           <div className={styles.navigation} ref={menuRef} onClick={toggleMenu}>
             <div className={styles.menu}>
               {nav__links.map((item, index) => (
@@ -80,7 +81,7 @@ const Header = () => {
             </div>
           </div>
 
-          {/* ======== nav right icons ========= */}
+          {/* -------- nav right icons -------- */}
           <div className="nav__right d-flex align-items-center gap-4">
             <span className={styles["cart-icon"]} onClick={toggleCart}>
               <i className="ri-shopping-basket-line"></i>
