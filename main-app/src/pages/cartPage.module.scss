@@ -1,0 +1,67 @@
+.container {
+  margin-top: 100px;
+  margin-bottom: 20px;
+  height: 70vh;
+}
+
+th {
+  text-align: center;
+}
+
+.cart__img-box {
+  width: 80px;
+}
+
+.cart__img-box img {
+  width: 100%;
+}
+
+.cart__item-del i {
+  cursor: pointer;
+}
+
+.text-center{
+  text-align: center;
+  p{
+    font-size: 1rem;
+  }
+}
+
+.cart__subtotal {
+  color: #df2020;
+  font-size: 1.4rem;
+  padding: 5px;
+
+  
+}
+
+.addTOCart__btn{
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+
+  background-color: #df2020;
+  margin: 20px 0px 20px 25px;
+
+  &:hover {
+
+    opacity: 0.95;
+  }
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+  &:hover {
+    color: white;
+
+  }
+ 
+}
+
+@media only screen and (max-width: 768px) {
+  th,
+  td {
+    font-size: 0.8rem;
+  }
+}

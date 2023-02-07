@@ -1,0 +1,10 @@
+.common__section {
+  background: linear-gradient(#0c0d1ab2, #10111dc4),
+    url("../assets/images/banner.jpg");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 100px 0px;
+}
