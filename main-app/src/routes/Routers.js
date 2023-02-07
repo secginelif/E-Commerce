@@ -1,7 +1,7 @@
 import React from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 
-import AllFoods from "../pages/AllFoods";
+import AllProducts from "../pages/AllProducts";
 import Cart from "../pages/Cart";
 import Checkout from "../pages/Checkout";
 
@@ -9,10 +9,10 @@ import Checkout from "../pages/Checkout";
 const Routers = () => {
   return (
     <Routes>
-      <Route path="/" element={<Navigate to="/foods" />} />
-      <Route path="/foods" element={<AllFoods />} />
-      <Route path="/cart" element={<Cart />} />
-      <Route path="/checkout" element={<Checkout />} />
+      <Route path="/" element={<Navigate to="/urunler" />} />
+      <Route path="/urunler" element={<AllProducts />} />
+      <Route path="/sepetim" element={<Cart />} />
+      <Route path="/siparis" element={<Checkout />} />
 
     </Routes>
   );

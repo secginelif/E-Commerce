@@ -11,11 +11,11 @@ import './header.scss'
 const nav__links = [
   {
     display: "Ürünler",
-    path: "/foods",
+    path: "/urunler",
   },
   {
     display: "Sepetim",
-    path: "/cart",
+    path: "/sepetim",
   }
 ];
 
@@ -89,12 +89,12 @@ const Header = () => {
             </span>
 
             <span className={styles["user-heart"]}>
-              <Link to="/favorite">
+              <Link to="/">
                 <i class="ri-heart-fill"></i>
               </Link>
             </span>
             <span className={styles.user}>
-              <Link to="/login">
+              <Link to="/">
               
                 <i className="switch" class="ri-moon-fill" onChange={toggleTheme} checked={theme === "dark"} ></i>
               </Link>

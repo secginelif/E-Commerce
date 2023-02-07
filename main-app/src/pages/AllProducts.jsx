@@ -8,7 +8,7 @@ import products from "../assets/fake-data/products";
 import ProductCard from "../components/UI/product-card/ProductCard";
 import ReactPaginate from "react-paginate";
 
-import styles from "./AllFoods.module.scss";
+import styles from "./AllProducts.module.scss";
 import '../styles/pagination.css'
 const AllFoods = () => {
   const [searchTerm, setSearchTerm] = useState("");
